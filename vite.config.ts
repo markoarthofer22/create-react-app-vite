@@ -15,12 +15,12 @@ export default defineConfig({
         },
         tsconfigPaths(),
     ],
-    publicDir: '/public_custom',
+    publicDir: '/public',
     css: {
         devSourcemap: true,
         modules: {
             localsConvention: 'dashesOnly',
-            hashPrefix: 'marko',
+            hashPrefix: 'erp-',
             generateScopedName: (name, filename, css) => `file-${name}`,
         },
     },
